@@ -69,7 +69,6 @@
 		<div class="file-upload-content">
 			<img class="file-upload-image" id="face-image" src="#" alt="your image" />
 			<p class="result-Message"></p>
-			<div id="label-container"></div>
 
 			<!-- Go to www.addthis.com/dashboard to customize your tools -->
 			<div class="addthis_inline_share_toolbox"></div>
@@ -164,7 +163,7 @@
 			maxPredictions = model.getTotalClasses();
 			labelContainer = document.getElementById("label-container");
 			for (let i = 0; i < maxPredictions; i++) { // and class labels
-				labelContainer.appendChild(document.createElement("img"));
+				labelContainer.appendChild(document.createElement("div"));
 			}
 		}
 		// run the webcam image through the image model
